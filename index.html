@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5fa">
+  <title>하트뿅 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor decor-one" aria-hidden="true"></div>
+  <div class="decor decor-two" aria-hidden="true"></div>
+
+  <main class="calculator" aria-label="하트뿅 공학용 계산기">
+    <header class="calculator-header">
+      <div>
+        <p class="eyebrow">SCIENTIFIC CALCULATOR</p>
+        <h1>하트뿅 계산기 <span aria-hidden="true">♡</span></h1>
+      </div>
+      <button id="angleMode" class="mode-button" type="button" aria-label="각도 단위 변경">DEG</button>
+    </header>
+
+    <section class="display" aria-live="polite">
+      <div id="expression" class="expression">계산을 시작해 보세요!</div>
+      <div id="result" class="result">0</div>
+    </section>
+
+    <section class="keypad" aria-label="계산기 버튼">
+      <button class="key soft" data-action="clear">AC</button>
+      <button class="key soft" data-action="delete" aria-label="한 글자 지우기">DEL</button>
+      <button class="key soft" data-action="parenthesis" data-value="(">(</button>
+      <button class="key soft" data-action="parenthesis" data-value=")">)</button>
+
+      <button class="key science" data-function="sin">sin</button>
+      <button class="key science" data-function="cos">cos</button>
+      <button class="key science" data-function="tan">tan</button>
+      <button class="key science" data-function="sqrt">√</button>
+
+      <button class="key science" data-function="log">log</button>
+      <button class="key science" data-function="ln">ln</button>
+      <button class="key science" data-action="square">x²</button>
+      <button class="key science" data-action="power">xʸ</button>
+
+      <button class="key science" data-constant="pi">π</button>
+      <button class="key science" data-constant="e">e</button>
+      <button class="key science" data-action="factorial">x!</button>
+      <button class="key operator" data-action="operator" data-value="÷">÷</button>
+
+      <button class="key number" data-number="7">7</button>
+      <button class="key number" data-number="8">8</button>
+      <button class="key number" data-number="9">9</button>
+      <button class="key operator" data-action="operator" data-value="×">×</button>
+
+      <button class="key number" data-number="4">4</button>
+      <button class="key number" data-number="5">5</button>
+      <button class="key number" data-number="6">6</button>
+      <button class="key operator" data-action="operator" data-value="−">−</button>
+
+      <button class="key number" data-number="1">1</button>
+      <button class="key number" data-number="2">2</button>
+      <button class="key number" data-number="3">3</button>
+      <button class="key operator" data-action="operator" data-value="+">+</button>
+
+      <button class="key soft" data-action="percent">%</button>
+      <button class="key number" data-number="0">0</button>
+      <button class="key number" data-action="decimal">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+
+    <p class="tip">키보드로도 계산할 수 있어요 <span aria-hidden="true">✦</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
